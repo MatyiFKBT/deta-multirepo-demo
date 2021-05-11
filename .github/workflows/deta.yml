@@ -15,6 +15,7 @@ jobs:
           deta-name: 'fastapi-sample' #Deta Micro name https://docs.deta.sh/docs/cli/commands/#deta-clone
           deta-project-dir: fastapi-sample
   deploy-flask:
+    needs: deploy-fastapi
     defaults:
       run: 
         working-directory: ./flask-sample
