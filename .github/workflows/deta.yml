@@ -9,10 +9,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2 #Be sure you check-out the repo first. Deta CLI needs access to the files
-      - uses: BogDAAAMN/deta-deploy-action@v1.0.0
+      - uses: MatyiFKBT/deta-deploy-action
         with:
           deta-access-token: ${{ secrets.DETA_TOKEN }} #Deta access token https://docs.deta.sh/docs/cli/auth
           deta-name: 'fastapi-sample' #Deta Micro name https://docs.deta.sh/docs/cli/commands/#deta-clone
+          deta-project-dir: fastapi-sample
   deploy-flask:
     defaults:
       run: 
@@ -20,7 +21,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2 #Be sure you check-out the repo first. Deta CLI needs access to the file
-      - uses: BogDAAAMN/deta-deploy-action@v1.0.0
+      - uses: MatyiFKBT/deta-deploy-action
         with:
           deta-access-token: ${{ secrets.DETA_TOKEN }} #Deta access token https://docs.deta.sh/docs/cli/auth
           deta-name: 'flask-sample' #Deta Micro name https://docs.deta.sh/docs/cli/commands/#deta-clone
+          deta-project-dir: flask-sample
