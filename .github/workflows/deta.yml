@@ -5,7 +5,7 @@ jobs:
   deploy-fastapi:
     defaults:
       run: 
-        working-directory: fastapi-sample
+        working-directory: ./fastapi-sample
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2 #Be sure you check-out the repo first. Deta CLI needs access to the files
@@ -16,7 +16,7 @@ jobs:
   deploy-flask:
     defaults:
       run: 
-        working-directory: fastapi-sample
+        working-directory: ./flask-sample
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2 #Be sure you check-out the repo first. Deta CLI needs access to the file
