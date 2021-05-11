@@ -1,0 +1,1 @@
+{"id":"8b51c5f7-cd3d-4e16-b8a2-7824d8904638","space":4309,"runtime":"python3.7","name":"flask-sample","path":"zpehcs","project":"a0336wwm","account":"144798365827","region":"eu-central-1","deps":["flask"],"envs":null,"public":true,"log_level":"debug","cron":"","reload_deps":false}
